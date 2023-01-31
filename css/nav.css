@@ -1,0 +1,117 @@
+body{
+    --fontFamily: 'Raleway';
+}
+
+
+.nav {
+    font-family: var(--fontFamily);
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    z-index: 400;
+    font-size: 2em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: rgb(58, 58, 58);
+}
+
+.clear {
+    clear: both;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li:hover {
+    background: #222;
+}
+
+.nav li * {
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    line-height: 40px;
+    color: #fff;
+}
+
+.nav>li>ul>* {
+    background-color: #222;
+}
+
+.nav input {
+    margin-top: 5px;
+    border: white 1px solid;
+    width: 88%;
+    margin-bottom: 10px;
+}
+
+.nav ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    z-index: 400;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav ul * {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8em;
+}
+
+.nav button {
+    border: white solid 0.5px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    box-shadow: 1.5px 1.5px white;
+}
+
+.nav button:active {
+    box-shadow: none;
+}
+
+.nav ul li {
+    float: none;
+}
+
+.nav li:hover>ul {
+    display: block;
+    background: #222;
+    border-top: 0;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.nav li li:hover {
+    background-color: #131313;
+}
+
+.nav * {
+    transition: 400ms;
+    user-select: none;
+}
+
+.nav>li.span:active {
+    background-color: rgb(9, 9, 9);
+}
+
+.nav label {
+    line-height: 100%;
+}
+
+.nav .wall {
+    width: 2px;
+    display: block;
+    height: 32px;
+    background-color: white;
+}
